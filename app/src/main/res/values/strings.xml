@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">HomeService</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_user">Usuario</string>
+    <string name="text_password">Contraseña</string>
+    <string name="text_password_hide">**********</string>
+    <string name="text_names">Nombres</string>
+    <string name="text_profile_subtitle_1">Datos Generales</string>
+    <string name="text_lastnames">Apellidos</string>
+    <string name="text_doctype">Tipo Doc.</string>
+    <string name="text_docnumber">Nro. Doc.</string>
+    <string name="text_phone">Celular</string>
+    <string name="text_email">Email</string>
+    <string name="text_address">Dirección</string>
+    <string name="text_reference">Referencia</string>
+    <string name="text_profile_subtitle2">Notificaciones</string>
+    <string name="text_notification_new_comment">Al recibir un nuevo comentario.</string>
+    <string name="text_search">Filtrar</string>
+    <string name="text_company_name">Razón Social</string>
+    <string name="text_rate">Rating</string>
+    <string name="text_favorites_button">Ver Favoritos</string>
+    <string name="text_description">Descripción</string>
+    <string name="text_date">Fecha</string>
+    <string name="text_state">Estado</string>
+    <string name="title_activity_favorite">Lista de Favoritos</string>
+    <string name="text_deals_button">Ver Acuerdo</string>
+    <string name="text_profile_button">Ver Pérfil</string>
+    <string name="text_favorites_remove_button">Quitar</string>
+    <string name="title_activity_client">ClientActivity</string>
+    <string name="title_activity_specialist_view">SpecialistViewActivity</string>
+    <string name="text_profile_spec_subtitle2">Último Servicio</string>
+    <string name="text_contact_button">Contactar</string>
+    <string name="text_profile_spec_subtitle1">Datos Especialista</string>
+    <string name="text_more_services_button">Ver Servicios</string>
+    <string name="title_activity_deal">DealActivity</string>
+    <string name="text_rate_deal_button">Calificar servicio</string>
+    <string name="text_facebook">Facebook</string>
+    <string name="text_comments_subtitle">Comentarios</string>
+    <string name="title_activity_rate">RateActivity</string>
+    <string name="text_rate_subtitle2">Servicio</string>
+    <string name="text_register_client_button">Registrase como Cliente</string>
+    <string name="text_register_specialist_button">Registrase como Técnico</string>
+
+    <string name="mock_text">mockText</string>
+
+
+
+</resources>
