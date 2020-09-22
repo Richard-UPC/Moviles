@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.aranibar.homeservice">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
 
     <application
         android:allowBackup="true"
@@ -8,24 +24,46 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ClientActivity">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".viewcontrollers.activities.ClienteActivity" />
+        <activity android:name=".viewcontrollers.activities.CameraPhoto" />
+        <activity android:name=".viewcontrollers.activities.SpecialistActivity" />
+        <activity android:name=".viewcontrollers.activities.SpecialistViewActivity" />
+        <activity android:name=".viewcontrollers.activities.RateActivity" />
+        <activity android:name=".viewcontrollers.activities.DealActivity" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
 
+        <activity
+            android:name=".viewcontrollers.activities.RegisterActivity"
+            android:label="@string/title_activity_register" />
 
-
-        </activity>
-        <activity android:name=".LoginActivity">
-
-        </activity>
-        <activity android:name=".StartActivity">
+        <activity android:name=".viewcontrollers.activities.ClientActivity" />
+        <activity android:name=".viewcontrollers.activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".viewcontrollers.activities.StartActivity" />
+        <activity android:name=".viewcontrollers.activities.MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.aranibar.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".viewcontrollers.activities.ClienteActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="110dp" />
+
+        <TextView
+            android:id="@+id/text_profile_subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Cliente"
+            android:textColor="@color/colorAccent"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider_subtitle1_top"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="@dimen/default_margin"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/text_profile_subtitle1" />
+
+        <TextView
+            android:id="@+id/text_user_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/text_user"
+
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_user" />
+
+        <EditText
+            android:id="@+id/text_user"
+            android:layout_width="269dp"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/default_margin"
+            android:text=""
+            android:editable="false"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/divider_subtitle1_top" />
+
+        <TextView
+            android:id="@+id/text_pwd_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/text_password"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_user" />
+
+        <EditText
+            android:id="@+id/text_pwd"
+            android:layout_width="269dp"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/default_margin"
+            android:password="true"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/text_user" />
+
+        <TextView
+            android:id="@+id/text_names_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/text_names"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_pwd" />
+
+        <EditText
+            android:id="@+id/text_names"
+            android:layout_width="269dp"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/default_margin"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/text_pwd" />
+
+        <TextView
+            android:id="@+id/text_lastnames_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/text_lastnames"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_names" />
+
+        <EditText
+            android:id="@+id/text_lastnames"
+            android:layout_width="269dp"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/default_margin"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/text_names" />
+
+        <TextView
+            android:id="@+id/text_doctype_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="Tipo Cliente"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_lastnames" />
+
+        <Spinner
+            android:id="@+id/text_doctype"
+            android:layout_width="269dp"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/text_lastnames" />
+
+
+        <TextView
+            android:id="@+id/text_docnumber_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/text_docnumber"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_doctype" />
+
+        <EditText
+            android:id="@+id/text_docnumber"
+            android:layout_width="269dp"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="180dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/text_doctype" />
+
+        <TextView
+            android:id="@+id/text_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/text_phone"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_docnumber" />
+
+        <EditText
+            android:id="@+id/text_phone"
+            android:layout_width="269dp"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/default_margin"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/text_docnumber" />
+
+        <TextView
+            android:id="@+id/text_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/text_email"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_phone" />
+
+        <EditText
+            android:id="@+id/text_email"
+            android:layout_width="269dp"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/default_margin"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/text_phone" />
+
+        <TextView
+            android:id="@+id/text_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/text_address"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_email" />
+
+        <EditText
+            android:id="@+id/text_address"
+            android:layout_width="269dp"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/default_margin"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/text_email" />
+
+        <TextView
+            android:id="@+id/text_reference_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="52dp"
+            android:text="@string/text_reference"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_address" />
+
+        <EditText
+            android:id="@+id/text_reference"
+            android:layout_width="272dp"
+            android:layout_height="54dp"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_marginTop="8dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.671"
+            app:layout_constraintStart_toEndOf="@+id/text_reference_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_address" />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="Registrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="59dp"
+            android:text="Especialidad"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toStartOf="@+id/text_docespecial"
+            app:layout_constraintHorizontal_bias="0.283"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_reference_label" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <Spinner
+            android:id="@+id/text_docespecial"
+            android:layout_width="273dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="21dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_reference"
+            app:layout_constraintVertical_bias="0.833" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

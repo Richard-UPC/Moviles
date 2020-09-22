@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "396144270642",
+    "firebase_url": "https://homeservices-4d522.firebaseio.com",
+    "project_id": "homeservices-4d522",
+    "storage_bucket": "homeservices-4d522.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396144270642:android:f265248e77249b4ef14b2b",
+        "android_client_info": {
+          "package_name": "com.aranibar.homeservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396144270642-1cnb0o5m31ilk2ske242trh85r0ghcf6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aranibar.homeservice",
+            "certificate_hash": "b2d4599ea4218b44949f29d53f9c4373d65f8842"
+          }
+        },
+        {
+          "client_id": "396144270642-uvobg4cktbrltath11hd3vb3laifshb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_z2OdBPx_WVohX09h7TNIH5TOZPbi08o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396144270642-uvobg4cktbrltath11hd3vb3laifshb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
